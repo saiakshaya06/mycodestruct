@@ -54,38 +54,52 @@ export default function OperatorsLesson() {
           {/* 1. Arithmetic Operators */}
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">1. Arithmetic Operators</h2>
-            <p className="text-neutral-400 mb-6">Used for mathematical calculations.</p>
+            <h3 className="text-neutral-400 mb-6">Used for mathematical calculations.</h3>
             
             <div className="overflow-x-auto rounded-xl border border-neutral-800 mb-6">
-              <table className="w-full text-left text-sm">
+              <table className="w-full text-left text-1xl">
                 <thead className="bg-[#111] text-neutral-400 uppercase text-[11px] tracking-widest">
                   <tr>
                     <th className="px-6 py-4">Operator</th>
                     <th className="px-6 py-4">Description</th>
                     <th className="px-6 py-4">Example (a=10, b=3)</th>
-                    <th className="px-6 py-4">Result</th>
+                    <th className="px-6 py-4">Results for below program</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-neutral-900 text-neutral-300">
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">+</td><td className="px-6 py-4">Addition</td><td className="px-6 py-4 font-mono text-xs">a + b</td><td className="px-6 py-4">10 + 3 = 13</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">-</td><td className="px-6 py-4">Subtraction</td><td className="px-6 py-4 font-mono text-xs">a - b</td><td className="px-6 py-4">10 - 3 = 7</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">*</td><td className="px-6 py-4">Multiplication</td><td className="px-6 py-4 font-mono text-xs">a * b</td><td className="px-6 py-4">10 * 3 = 30</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">/</td><td className="px-6 py-4">Division</td><td className="px-6 py-4 font-mono text-xs">a / b</td><td className="px-6 py-4">10 / 3 = 3 (integer division)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">%</td><td className="px-6 py-4">Modulus (Remainder)</td><td className="px-6 py-4 font-mono text-xs">a % b</td><td className="px-6 py-4">10 % 3 = 1</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono">+</td><td className="px-6 py-4">Addition</td><td className="px-6 py-4 font-mono text-1xl">a + b</td><td className="px-6 py-4">10 + 3 = 13</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono">-</td><td className="px-6 py-4">Subtraction</td><td className="px-6 py-4 font-mono text-1xl">a - b</td><td className="px-6 py-4">10 - 3 = 7</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono">*</td><td className="px-6 py-4">Multiplication</td><td className="px-6 py-4 font-mono text-1xl">a * b</td><td className="px-6 py-4">10 * 3 = 30</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono">/</td><td className="px-6 py-4">Division</td><td className="px-6 py-4 font-mono text-1xl">a / b</td><td className="px-6 py-4">10 / 3 = 3 (integer division)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono">%</td><td className="px-6 py-4">Modulus (Remainder)</td><td className="px-6 py-4 font-mono text-1xl">a % b</td><td className="px-6 py-4">10 % 3 = 1</td></tr>
                 </tbody>
               </table>
             </div>
 
-            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm leading-7">
+            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl leading-7 shadow-2xl overflow-x-auto">
               <span className="text-blue-500">#include</span> <span className="text-orange-400">&lt;iostream&gt;</span><br/>
               <span className="text-red-500">using namespace</span> std;<br/><br/>
+              
               <span className="text-red-500">int</span> <span className="text-yellow-400">main</span>() &#123;<br/>
               &nbsp;&nbsp;<span className="text-red-500">int</span> a = <span className="text-blue-400">10</span>, b = <span className="text-blue-400">3</span>;<br/><br/>
-              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Addition: "</span> &lt;&lt; a + b &lt;&lt; endl;<br/>
-              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Subtraction: "</span> &lt;&lt; a - b &lt;&lt; endl;<br/>
-              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Multiplication: "</span> &lt;&lt; a * b &lt;&lt; endl;<br/>
-              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Division: "</span> &lt;&lt; a / b &lt;&lt; endl;<br/>
-              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Modulus: "</span> &lt;&lt; a % b &lt;&lt; endl;<br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 1. Addition (+)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Addition: "</span> &lt;&lt; a + b &lt;&lt; endl; <span className="text-neutral-600">// Output: 13 (10 + 3)</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 2. Subtraction (-)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Subtraction: "</span> &lt;&lt; a - b &lt;&lt; endl; <span className="text-neutral-600">// Output: 7 (10 - 3)</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 3. Multiplication (*)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Multiplication: "</span> &lt;&lt; a * b &lt;&lt; endl; <span className="text-neutral-600">// Output: 30 (10 * 3)</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 4. Division (/)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// Note: Since both 'a' and 'b' are integers, the result is truncated (integer division).</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Division: "</span> &lt;&lt; a / b &lt;&lt; endl; <span className="text-neutral-600">// Output: 3 (not 3.333..., to get 3.333... convert one operand to float like 10.0/3 or 10/3.0 or 10.0/3.0)</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 5. Modulus (%)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// Returns the remainder of the division.</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Modulus: "</span> &lt;&lt; a % b &lt;&lt; endl; <span className="text-neutral-600">// Output: 1 (10 / 3 gives remainder 1)</span><br/><br/>
+
               &nbsp;&nbsp;<span className="text-red-500">return</span> <span className="text-blue-400">0</span>;<br/>
               &#125;
             </div>
@@ -96,34 +110,53 @@ export default function OperatorsLesson() {
             <h2 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">2. Relational (Comparison) Operators</h2>
             <p className="text-neutral-400 mb-6">Used to compare values and return 1 (true) or 0 (false).</p>
             <div className="overflow-x-auto rounded-xl border border-neutral-800 mb-6">
-              <table className="w-full text-left text-sm">
+              <table className="w-full text-left text-1xl">
                 <thead className="bg-[#111] text-neutral-400 uppercase text-[11px] tracking-widest">
                   <tr>
                     <th className="px-6 py-4">Operator</th>
                     <th className="px-6 py-4">Description</th>
                     <th className="px-6 py-4">Example (a=5, b=10)</th>
-                    <th className="px-6 py-4">Result</th>
+                    <th className="px-6 py-4">Results for below program</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-neutral-900 text-neutral-300">
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">==</td><td className="px-6 py-4">Equal to</td><td className="px-6 py-4 font-mono text-xs">a == b</td><td className="px-6 py-4">0 (false)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">!=</td><td className="px-6 py-4">Not equal to</td><td className="px-6 py-4 font-mono text-xs">a != b</td><td className="px-6 py-4">1 (true)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">&gt;</td><td className="px-6 py-4">Greater than</td><td className="px-6 py-4 font-mono text-xs">a &gt; b</td><td className="px-6 py-4">0 (false)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">&lt;</td><td className="px-6 py-4">Less than</td><td className="px-6 py-4 font-mono text-xs">a &lt; b</td><td className="px-6 py-4">1 (true)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">&gt;=</td><td className="px-6 py-4">Greater than or equal to</td><td className="px-6 py-4 font-mono text-xs">a &gt;= b</td><td className="px-6 py-4">0 (false)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">&lt;=</td><td className="px-6 py-4">Less than or equal to</td><td className="px-6 py-4 font-mono text-xs">a &lt;= b</td><td className="px-6 py-4">1 (true)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono">==</td><td className="px-6 py-4">Equal to</td><td className="px-6 py-4 font-mono text-1xl">a == b</td><td className="px-6 py-4">0 (false)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono">!=</td><td className="px-6 py-4">Not equal to</td><td className="px-6 py-4 font-mono text-1xl">a != b</td><td className="px-6 py-4">1 (true)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono">&gt;</td><td className="px-6 py-4">Greater than</td><td className="px-6 py-4 font-mono text-1xl">a &gt; b</td><td className="px-6 py-4">0 (false)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono">&lt;</td><td className="px-6 py-4">Less than</td><td className="px-6 py-4 font-mono text-1xl">a &lt; b</td><td className="px-6 py-4">1 (true)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono">&gt;=</td><td className="px-6 py-4">Greater than or equal to</td><td className="px-6 py-4 font-mono text-1xl">a &gt;= b</td><td className="px-6 py-4">0 (false)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono">&lt;=</td><td className="px-6 py-4">Less than or equal to</td><td className="px-6 py-4 font-mono text-1xl">a &lt;= b</td><td className="px-6 py-4">1 (true)</td></tr>
                 </tbody>
               </table>
             </div>
 
-            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm leading-7 shadow-2xl">
+            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl leading-7 shadow-2xl overflow-x-auto">
               <span className="text-blue-500">#include</span> <span className="text-orange-400">&lt;iostream&gt;</span><br/>
               <span className="text-red-500">using namespace</span> std;<br/><br/>
+              
               <span className="text-red-500">int</span> <span className="text-yellow-400">main</span>() &#123;<br/>
               &nbsp;&nbsp;<span className="text-red-500">int</span> a = <span className="text-blue-400">5</span>, b = <span className="text-blue-400">10</span>;<br/><br/>
-              &nbsp;&nbsp;cout &lt;&lt; (a == b) &lt;&lt; endl;<br/>
-              &nbsp;&nbsp;cout &lt;&lt; (a != b) &lt;&lt; endl;<br/>
-              &nbsp;&nbsp;cout &lt;&lt; (a &lt; b) &lt;&lt; endl;<br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 1. Equal to (==)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// Note: This returns 0 because 5 is not equal to 10.</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (a == b) &lt;&lt; endl; <span className="text-neutral-600">// Output: 0 (false)</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 2. Not equal to (!=)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// This returns 1 because 5 is indeed different from 10.</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (a != b) &lt;&lt; endl; <span className="text-neutral-600">// Output: 1 (true)</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 3. Greater than (&gt;)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (a &gt; b) &lt;&lt; endl; <span className="text-neutral-600">// Output: 0 (false)</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 4. Less than (&lt;)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (a &lt; b) &lt;&lt; endl; <span className="text-neutral-600">// Output: 1 (true)</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 5. Greater than or equal to (&gt;=)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (a &gt;= b) &lt;&lt; endl; <span className="text-neutral-600">// Output: 0 (false)</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 6. Less than or equal to (&lt;=)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (a &lt;= b) &lt;&lt; endl; <span className="text-neutral-600">// Output: 1 (true)</span><br/><br/>
+
               &nbsp;&nbsp;<span className="text-red-500">return</span> <span className="text-blue-400">0</span>;<br/>
               &#125;
             </div>
@@ -133,29 +166,42 @@ export default function OperatorsLesson() {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">3. Logical Operators</h2>
             <p className="text-neutral-400 mb-6">Used to perform logical operations (AND, OR, NOT).</p>
-            <div className="overflow-x-auto rounded-xl border border-neutral-800 mb-6">
-              <table className="w-full text-left text-sm">
+            <div className="overflow-x-auto rounded-1xl border border-neutral-800 mb-6">
+              <table className="w-full text-left text-1xl">
                 <thead className="bg-[#111] text-neutral-400 uppercase text-[11px] tracking-widest">
                   <tr>
                     <th className="px-6 py-4">Operator</th>
                     <th className="px-6 py-4">Description</th>
                     <th className="px-6 py-4">Example (a=1, b=0)</th>
-                    <th className="px-6 py-4">Result</th>
+                    <th className="px-6 py-4">Results for below program</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-neutral-900 text-neutral-300">
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">&&</td><td className="px-6 py-4">Logical AND</td><td className="px-6 py-4 font-mono text-xs">a && b</td><td className="px-6 py-4">0 (false)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">||</td><td className="px-6 py-4">Logical OR</td><td className="px-6 py-4 font-mono text-xs">a || b</td><td className="px-6 py-4">1 (true)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">!</td><td className="px-6 py-4">Logical NOT</td><td className="px-6 py-4 font-mono text-xs">!a</td><td className="px-6 py-4">0 (false)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono">&&</td><td className="px-6 py-4">Logical AND</td><td className="px-6 py-4 font-mono text-1xl">a && b</td><td className="px-6 py-4">0 (false)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono">||</td><td className="px-6 py-4">Logical OR</td><td className="px-6 py-4 font-mono text-1xl">a || b</td><td className="px-6 py-4">1 (true)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono">!</td><td className="px-6 py-4">Logical NOT</td><td className="px-6 py-4 font-mono text-1xl">!a</td><td className="px-6 py-4">0 (false)</td></tr>
                 </tbody>
               </table>
             </div>
-            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm leading-7">
+            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl leading-7 shadow-2xl overflow-x-auto">
+              <span className="text-blue-500">#include</span> <span className="text-orange-400">&lt;iostream&gt;</span><br/>
+              <span className="text-red-500">using namespace</span> std;<br/><br/>
+              
               <span className="text-red-500">int</span> <span className="text-yellow-400">main</span>() &#123;<br/>
-              &nbsp;&nbsp;<span className="text-red-500">int</span> a = <span className="text-blue-400">1</span>, b = <span className="text-blue-400">0</span>;<br/>
-              &nbsp;&nbsp;cout &lt;&lt; (a &amp;&amp; b) &lt;&lt; endl;<br/>
-              &nbsp;&nbsp;cout &lt;&lt; (a || b) &lt;&lt; endl;<br/>
-              &nbsp;&nbsp;cout &lt;&lt; (!a) &lt;&lt; endl;<br/>
+              &nbsp;&nbsp;<span className="text-red-500">int</span> a = <span className="text-blue-400">1</span>, b = <span className="text-blue-400">0</span>; <span className="text-neutral-500">// 1 is true, 0 is false</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 1. Logical AND (&&)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// Returns 1 only if BOTH are true. (1 && 0 is false)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (a &amp;&amp; b) &lt;&lt; endl; <span className="text-neutral-600">// Output: 0</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 2. Logical OR (||)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// Returns 1 if AT LEAST ONE is true. (1 || 0 is true)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (a || b) &lt;&lt; endl; <span className="text-neutral-600">// Output: 1</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 3. Logical NOT (!)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// Reverses the state: true becomes false, false becomes true.</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (!a) &lt;&lt; endl; <span className="text-neutral-600">// Output: 0 (since !1 is 0)</span><br/><br/>
+
               &nbsp;&nbsp;<span className="text-red-500">return</span> <span className="text-blue-400">0</span>;<br/>
               &#125;
             </div>
@@ -165,32 +211,57 @@ export default function OperatorsLesson() {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">4. Bitwise Operators</h2>
             <p className="text-neutral-400 mb-6">Perform bitwise operations on integers.</p>
-            <div className="overflow-x-auto rounded-xl border border-neutral-800 mb-6">
-              <table className="w-full text-left text-sm">
+            <div className="overflow-x-auto rounded-1xl border border-neutral-800 mb-6">
+              <table className="w-full text-left text-1xl">
                 <thead className="bg-[#111] text-neutral-400 uppercase text-[11px] tracking-widest">
                   <tr>
                     <th className="px-6 py-4">Operator</th>
                     <th className="px-6 py-4">Description</th>
                     <th className="px-6 py-4">Example (a=5 (0101), b=3 (0011))</th>
-                    <th className="px-6 py-4">Result</th>
+                    <th className="px-6 py-4">Results for below program</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-neutral-900 text-neutral-300 text-xs">
-                  <tr><td className="px-6 py-4 text-red-400 font-mono font-bold">&</td><td className="px-6 py-4">Bitwise AND</td><td className="px-6 py-4 font-mono">a & b</td><td className="px-6 py-4">1 (0001)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono font-bold">|</td><td className="px-6 py-4">Bitwise OR</td><td className="px-6 py-4 font-mono">a | b</td><td className="px-6 py-4">7 (0111)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono font-bold">^</td><td className="px-6 py-4">Bitwise XOR</td><td className="px-6 py-4 font-mono">a ^ b</td><td className="px-6 py-4">6 (0110)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono font-bold">&lt;&lt;</td><td className="px-6 py-4">Left shift</td><td className="px-6 py-4 font-mono">a &lt;&lt; 1</td><td className="px-6 py-4">10 (1010)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono font-bold">&gt;&gt;</td><td className="px-6 py-4">Right shift</td><td className="px-6 py-4 font-mono">a &gt;&gt; 1</td><td className="px-6 py-4">2 (0010)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono font-bold">~</td><td className="px-6 py-4">Bitwise NOT</td><td className="px-6 py-4 font-mono">~a</td><td className="px-6 py-4">-6 (2’s complement)</td></tr>
+                <tbody className="divide-y divide-neutral-900 text-neutral-300 text-1xl">
+                  <tr><td className="px-6 py-4 text-red-400 font-mono font-bold">&</td><td className="px-6 py-4">Bitwise AND</td><td className="px-6 py-4 font-mono text-1xl">a & b</td><td className="px-6 py-4">1 (0001)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono font-bold">|</td><td className="px-6 py-4">Bitwise OR</td><td className="px-6 py-4 font-mono text-1xl">a | b</td><td className="px-6 py-4">7 (0111)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono font-bold">^</td><td className="px-6 py-4">Bitwise XOR</td><td className="px-6 py-4 font-mono text-1xl">a ^ b</td><td className="px-6 py-4">6 (0110)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono font-bold">&lt;&lt;</td><td className="px-6 py-4">Left shift</td><td className="px-6 py-4 font-mono text-1xl">a &lt;&lt; 1</td><td className="px-6 py-4">10 (1010)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono font-bold">&gt;&gt;</td><td className="px-6 py-4">Right shift</td><td className="px-6 py-4 font-mono text-1xl">a &gt;&gt; 1</td><td className="px-6 py-4">2 (0010)</td></tr>
+                  <tr><td className="px-6 py-4 text-red-400 font-mono font-bold">~</td><td className="px-6 py-4">Bitwise NOT</td><td className="px-6 py=4 font-mono text-1xl">~a</td><td className="px-6 py-4">-6 (2's complement)</td></tr>
                 </tbody>
               </table>
             </div>
-            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm leading-7">
+            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl leading-7 shadow-2xl overflow-x-auto">
+              <span className="text-blue-500">#include</span> <span className="text-orange-400">&lt;iostream&gt;</span><br/>
+              <span className="text-red-500">using namespace</span> std;<br/><br/>
+              
               <span className="text-red-500">int</span> <span className="text-yellow-400">main</span>() &#123;<br/>
-              &nbsp;&nbsp;<span className="text-red-500">int</span> a = <span className="text-blue-400">5</span>, b = <span className="text-blue-400">3</span>;<br/>
-              &nbsp;&nbsp;cout &lt;&lt; (a &amp; b) &lt;&lt; endl;<br/>
-              &nbsp;&nbsp;cout &lt;&lt; (a | b) &lt;&lt; endl;<br/>
-              &nbsp;&nbsp;cout &lt;&lt; (a ^ b) &lt;&lt; endl;<br/>
+              &nbsp;&nbsp;<span className="text-red-500">int</span> a = <span className="text-blue-400">5</span>, b = <span className="text-blue-400">3</span>; <span className="text-neutral-500">// a = 0101, b = 0011 in binary</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 1. Bitwise AND (&)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// 0101 & 0011 = 0001</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (a &amp; b) &lt;&lt; endl; <span className="text-neutral-600">// Output: 1</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 2. Bitwise OR (|)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// 0101 | 0011 = 0111</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (a | b) &lt;&lt; endl; <span className="text-neutral-600">// Output: 7</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 3. Bitwise XOR (^)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// 0101 ^ 0011 = 0110 (1 if bits are different)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (a ^ b) &lt;&lt; endl; <span className="text-neutral-600">// Output: 6</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 4. Left Shift (&lt;&lt;)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// 0101 shifted left by 1 = 1010</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (a &lt;&lt; <span className="text-blue-400">1</span>) &lt;&lt; endl; <span className="text-neutral-600">// Output: 10 (Effectively multiplies by 2)</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 5. Right Shift (&gt;&gt;)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// 0101 shifted right by 1 = 0010</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (a &gt;&gt; <span className="text-blue-400">1</span>) &lt;&lt; endl; <span className="text-neutral-600">// Output: 2 (Effectively divides by 2)</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 6. Bitwise NOT (~)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// Flips all bits (Inverting 0101 involves 2's complement logic)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; (~a) &lt;&lt; endl; <span className="text-neutral-600">// Output: -6</span><br/><br/>
+
               &nbsp;&nbsp;<span className="text-red-500">return</span> <span className="text-blue-400">0</span>;<br/>
               &#125;
             </div>
@@ -200,8 +271,8 @@ export default function OperatorsLesson() {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">5. Assignment Operators</h2>
             <p className="text-neutral-400 mb-6">Used to assign values to variables.</p>
-            <div className="overflow-x-auto rounded-xl border border-neutral-800 mb-6 text-sm">
-              <table className="w-full text-left">
+            <div className="overflow-x-auto rounded-xl border border-neutral-800 mb-6 text-1xl">
+              <table className="w-full text-left text-1xl">
                 <thead className="bg-[#111] text-neutral-400 uppercase text-[11px] tracking-widest">
                   <tr><th className="px-6 py-4">Operator</th><th className="px-6 py-4">Example (a = 10)</th><th className="px-6 py-4">Equivalent To</th></tr>
                 </thead>
@@ -215,11 +286,34 @@ export default function OperatorsLesson() {
                 </tbody>
               </table>
             </div>
-            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm leading-7 shadow-2xl">
+            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl leading-7 shadow-2xl overflow-x-auto">
+              <span className="text-blue-500">#include</span> <span className="text-orange-400">&lt;iostream&gt;</span><br/>
+              <span className="text-red-500">using namespace</span> std;<br/><br/>
+              
               <span className="text-red-500">int</span> <span className="text-yellow-400">main</span>() &#123;<br/>
-              &nbsp;&nbsp;<span className="text-red-500">int</span> a = <span className="text-blue-400">10</span>;<br/>
-              &nbsp;&nbsp;a += <span className="text-blue-400">5</span>;<br/>
-              &nbsp;&nbsp;cout &lt;&lt; a &lt;&lt; endl;<br/>
+              &nbsp;&nbsp;<span className="text-red-500">int</span> a = <span className="text-blue-400">10</span>; <span className="text-neutral-500">// 1. Basic Assignment (=)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Initial value: "</span> &lt;&lt; a &lt;&lt; endl;<br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 2. Addition Assignment (+=)</span><br/>
+              &nbsp;&nbsp;a += <span className="text-blue-400">5</span>; <span className="text-neutral-600">// Same as: a = a + 5 (10 + 5)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"After += 5: "</span> &lt;&lt; a &lt;&lt; endl; <span className="text-neutral-600">// Output: 15</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 3. Subtraction Assignment (-=)</span><br/>
+              &nbsp;&nbsp;a -= <span className="text-blue-400">3</span>; <span className="text-neutral-600">// Same as: a = a - 3 (15 - 3)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"After -= 3: "</span> &lt;&lt; a &lt;&lt; endl; <span className="text-neutral-600">// Output: 12</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 4. Multiplication Assignment (*=)</span><br/>
+              &nbsp;&nbsp;a *= <span className="text-blue-400">2</span>; <span className="text-neutral-600">// Same as: a = a * 2 (12 * 2)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"After *= 2: "</span> &lt;&lt; a &lt;&lt; endl; <span className="text-neutral-600">// Output: 24</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 5. Division Assignment (/=)</span><br/>
+              &nbsp;&nbsp;a /= <span className="text-blue-400">4</span>; <span className="text-neutral-600">// Same as: a = a / 4 (24 / 4)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"After /= 4: "</span> &lt;&lt; a &lt;&lt; endl; <span className="text-neutral-600">// Output: 6</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 6. Modulus Assignment (%=)</span><br/>
+              &nbsp;&nbsp;a %= <span className="text-blue-400">4</span>; <span className="text-neutral-600">// Same as: a = a % 4 (Remainder of 6 / 4)</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"After %= 4: "</span> &lt;&lt; a &lt;&lt; endl; <span className="text-neutral-600">// Output: 2</span><br/><br/>
+
               &nbsp;&nbsp;<span className="text-red-500">return</span> <span className="text-blue-400">0</span>;<br/>
               &#125;
             </div>
@@ -229,70 +323,188 @@ export default function OperatorsLesson() {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">6. Unary Operators</h2>
             <p className="text-neutral-400 mb-6">Operate on a single operand.</p>
-            <div className="overflow-x-auto rounded-xl border border-neutral-800 mb-6 text-sm">
-              <table className="w-full text-left">
-                <thead className="bg-[#111] text-neutral-400 uppercase text-[11px] tracking-widest">
-                  <tr><th className="px-6 py-4">Operator</th><th className="px-6 py-4">Description</th><th className="px-6 py-4">Example (a = 5)</th></tr>
+            <div className="overflow-x-auto rounded-xl border border-neutral-800 mb-6 text-1xl">
+              <table className="w-full text-left text-1xl">
+                <thead className="bg-[#111] text-neutral-400 uppercase text-[11px] tracking-widest border-b border-neutral-800">
+                  <tr>
+                    <th className="px-6 py-4">Operator</th>
+                    <th className="px-6 py-4">Description</th>
+                    <th className="px-6 py-4">Action on Variable</th>
+                    <th className="px-6 py-4">Effect on Expression</th>
+                  </tr>
                 </thead>
                 <tbody className="divide-y divide-neutral-900 text-neutral-300">
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">++</td><td className="px-6 py-4">Increment</td><td className="px-6 py-4 font-mono">a++ (post-increment)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">--</td><td className="px-6 py-4">Decrement</td><td className="px-6 py-4 font-mono">--a (pre-decrement)</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">-</td><td className="px-6 py-4">Unary minus</td><td className="px-6 py-4 font-mono">-a</td></tr>
-                  <tr><td className="px-6 py-4 text-red-400 font-mono">+</td><td className="px-6 py-4">Unary plus</td><td className="px-6 py-4 font-mono">+a</td></tr>
+                  {/* Increment Group */}
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="px-6 py-4 text-red-400 font-mono font-bold">a++</td>
+                    <td className="px-6 py-4">Post-Increment</td>
+                    <td className="px-6 py-4">Increases by 1</td>
+                    <td className="px-6 py-4 italic text-neutral-500 text-xs">Uses OLD value then updates</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="px-6 py-4 text-red-400 font-mono font-bold">++a</td>
+                    <td className="px-6 py-4">Pre-Increment</td>
+                    <td className="px-6 py-4">Increases by 1</td>
+                    <td className="px-6 py-4 italic text-neutral-500 text-xs">Updates then uses NEW value</td>
+                  </tr>
+                  
+                  {/* Decrement Group */}
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="px-6 py-4 text-red-400 font-mono font-bold">a--</td>
+                    <td className="px-6 py-4">Post-Decrement</td>
+                    <td className="px-6 py-4">Decreases by 1</td>
+                    <td className="px-6 py-4 italic text-neutral-500 text-xs">Uses OLD value then updates</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="px-6 py-4 text-red-400 font-mono font-bold">--a</td>
+                    <td className="px-6 py-4">Pre-Decrement</td>
+                    <td className="px-6 py-4">Decreases by 1</td>
+                    <td className="px-6 py-4 italic text-neutral-500 text-xs">Updates then uses NEW value</td>
+                  </tr>
+
+                  {/* Unary Plus/Minus Group */}
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="px-6 py-4 text-red-400 font-mono font-bold">-a</td>
+                    <td className="px-6 py-4">Unary Minus</td>
+                    <td className="px-6 py-4 text-neutral-500">No change in memory</td>
+                    <td className="px-6 py-4 italic text-neutral-500 text-xs">Returns negated value</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="px-6 py-4 text-red-400 font-mono font-bold">+a</td>
+                    <td className="px-6 py-4">Unary Plus</td>
+                    <td className="px-6 py-4 text-neutral-500">No change in memory</td>
+                    <td className="px-6 py-4 italic text-neutral-500 text-xs">Returns value as-is</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
-            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm leading-7">
-              <span className="text-red-500">int</span> a = <span className="text-blue-400">5</span>;<br/>
-              cout &lt;&lt; ++a &lt;&lt; endl; <span className="text-neutral-600">// Output: 6</span><br/>
-              cout &lt;&lt; a-- &lt;&lt; endl; <span className="text-neutral-600">// Output: 6</span>
+            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl leading-7 shadow-2xl overflow-x-auto">
+              <span className="text-blue-500">#include</span> <span className="text-orange-400">&lt;iostream&gt;</span><br/>
+              <span className="text-red-500">using namespace</span> std;<br/><br/>
+              
+              <span className="text-red-500">int</span> <span className="text-yellow-400">main</span>() &#123;<br/>
+              &nbsp;&nbsp;<span className="text-red-500">int</span> a = <span className="text-blue-400">10</span>;<br/>
+              &nbsp;&nbsp;<span className="text-red-500">int</span> result;<br/><br/>
+
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"--- INCREMENT / DECREMENT ---"</span> &lt;&lt; endl;<br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 1. Post-Increment (a++)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// Logic: Use current value first, then increment.</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Post-Increment: "</span> &lt;&lt; a++ &lt;&lt; endl; <span className="text-neutral-600">// Output: 10 (Memory becomes 11 AFTER)</span><br/><br/>
+              
+              &nbsp;&nbsp;<span className="text-neutral-500">// 2. Pre-Increment (++a)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// Logic: Increment first, then use the new value.</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Pre-Increment:  "</span> &lt;&lt; ++a &lt;&lt; endl; <span className="text-neutral-600">// Output: 12 (Memory was 11, becomes 12 BEFORE)</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 3. Post-Decrement (a--)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// Logic: Use current value first, then decrement.</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Post-Decrement: "</span> &lt;&lt; a-- &lt;&lt; endl; <span className="text-neutral-600">// Output: 12 (Memory becomes 11 AFTER)</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 4. Pre-Decrement (--a)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// Logic: Decrement first, then use the new value.</span><br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Pre-Decrement:  "</span> &lt;&lt; --a &lt;&lt; endl; <span className="text-neutral-600">// Output: 10 (Memory was 11, becomes 10 BEFORE)</span><br/><br/>
+
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"\n--- UNARY PLUS / MINUS ---"</span> &lt;&lt; endl;<br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// Note: These do NOT change the value of 'a' in memory.</span><br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 5. Unary Minus (-)</span><br/>
+              &nbsp;&nbsp;result = -a;<br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Unary Minus:    "</span> &lt;&lt; result &lt;&lt; <span className="text-orange-400">" (a is still "</span> &lt;&lt; a &lt;&lt; <span className="text-orange-400">")"</span> &lt;&lt; endl;<br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// 6. Unary Plus (+)</span><br/>
+              &nbsp;&nbsp;result = +a;<br/>
+              &nbsp;&nbsp;cout &lt;&lt; <span className="text-orange-400">"Unary Plus:     "</span> &lt;&lt; result &lt;&lt; <span className="text-orange-400">" (a is still "</span> &lt;&lt; a &lt;&lt; <span className="text-orange-400">")"</span> &lt;&lt; endl;<br/><br/>
+
+              &nbsp;&nbsp;<span className="text-red-500">return</span> <span className="text-blue-400">0</span>;<br/>
+              &#125;
             </div>
           </section>
 
           {/* 7. Ternary Operator */}
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">7. Ternary Operator (?:)</h2>
-            <p className="text-neutral-400 mb-4 italic text-sm">A shorthand for if-else conditions.</p>
-            <div className="p-4 bg-neutral-900 border border-neutral-800 rounded-xl mb-4 font-mono text-blue-400 text-xs">
-              condition ? expression1 : expression2;
+            <p className="text-neutral-400 mb-4 italic text-1xl">A shorthand for if-else conditions.</p>
+            <div className="p-4 bg-neutral-900 border border-neutral-800 rounded-xl mb-4 font-mono text-blue-400 text-1xl">
+              condition ? expression1(if condition true) : expression2(if condition false);
             </div>
-            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm leading-7">
-              <span className="text-red-500">int</span> age = <span className="text-blue-400">20</span>;<br/>
-              (age &gt;= <span className="text-blue-400">18</span>) ? cout &lt;&lt; <span className="text-orange-400">"Adult"</span> : cout &lt;&lt; <span className="text-orange-400">"Minor"</span>;
+            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl leading-7 shadow-2xl overflow-x-auto">
+              <span className="text-blue-500">#include</span> <span className="text-orange-400">&lt;iostream&gt;</span><br/>
+              <span className="text-red-500">using namespace</span> std;<br/><br/>
+              
+              <span className="text-red-500">int</span> <span className="text-yellow-400">main</span>() &#123;<br/>
+              &nbsp;&nbsp;<span className="text-red-500">int</span> age = <span className="text-blue-400">20</span>;<br/><br/>
+
+              &nbsp;&nbsp;<span className="text-neutral-500">// Ternary Operator (Condition ? Expression_If_True : Expression_If_False)</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// 1. (age &gt;= 18) is the condition (True in this case).</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// 2. cout &lt;&lt; "Adult" executes because the condition is True.</span><br/>
+              &nbsp;&nbsp;<span className="text-neutral-500">// 3. If age was 15, "Minor" would have been printed instead.</span><br/>
+              &nbsp;&nbsp;(age &gt;= <span className="text-blue-400">18</span>) ? cout &lt;&lt; <span className="text-orange-400">"Adult"</span> : cout &lt;&lt; <span className="text-orange-400">"Minor"</span>;<br/><br/>
+
+              &nbsp;&nbsp;<span className="text-red-500">return</span> <span className="text-blue-400">0</span>;<br/>
+              &#125;
             </div>
           </section>
 
           {/* 8. Comma Operator */}
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">8. Comma Operator (,)</h2>
-            <ul className="list-disc ml-6 text-neutral-300 space-y-2 text-sm leading-6 mb-4">
+            <ul className="list-disc ml-6 text-neutral-300 space-y-2 text-base leading-6 mb-4">
               <li>Used to separate expressions</li>
-              <li>Returns the last expression</li>
             </ul>
-            <code className="text-blue-400 bg-black/40 p-2 rounded block w-fit border border-neutral-800 text-xs">int a, b, c;</code>
+            <code className="text-blue-400 bg-black/40 p-2 rounded block w-fit border border-neutral-800 text-1xl">int a, b, c;</code>
           </section>
 
           {/* 9. Sizeof Operator */}
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">9. Sizeof Operator</h2>
-            <p className="text-neutral-400 mb-4">Returns the size of a variable or data type.</p>
-            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm leading-7">
-              cout &lt;&lt; <span className="text-red-500">sizeof</span>(<span className="text-red-500">int</span>);
+            <p className="text-neutral-300 text-1xl leading-6 mb-6">
+              The <code className="text-red-400 bg-neutral-900 px-1.5 py-0.5 rounded">sizeof</code> operator is a compile-time operator that returns the size (in bytes) of a data type or a specific variable. This is crucial for writing programs that work across different hardware.
+            </p>
+
+            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl leading-7 shadow-2xl overflow-x-auto">
+              <span className="text-red-500">int</span> x = <span className="text-blue-400">10</span>;<br/>
+              <span className="text-red-500">double</span> y = <span className="text-blue-400">5.5</span>;<br/>
+              <span className="text-red-500">char</span> z = <span className="text-orange-400">'A'</span>;<br/><br/>
+
+              <span className="text-neutral-500">// 1. Getting size of specific data types</span><br/>
+              cout &lt;&lt; <span className="text-orange-400">"Size of int: "</span> &lt;&lt; <span className="text-red-500">sizeof</span>(<span className="text-red-500">int</span>) &lt;&lt; <span className="text-orange-400">" bytes"</span> &lt;&lt; endl; <span className="text-neutral-600">// Output: Size of int: 4 bytes</span><br/><br/>
+
+              <span className="text-neutral-500">// 2. Getting size of variables</span><br/>
+              cout &lt;&lt; <span className="text-orange-400">"Size of char variable: "</span> &lt;&lt; <span className="text-red-500">sizeof</span>(z) &lt;&lt; <span className="text-orange-400">" byte"</span> &lt;&lt; endl; <span className="text-neutral-600">// Output: Size of char variable: 1 byte</span><br/><br/>
+
+              <span className="text-neutral-500">// 3. Larger data types take more space</span><br/>
+              cout &lt;&lt; <span className="text-orange-400">"Size of double: "</span> &lt;&lt; <span className="text-red-500">sizeof</span>(y) &lt;&lt; <span className="text-orange-400">" bytes"</span> &lt;&lt; endl; <span className="text-neutral-600">// Output: Size of double: 8 bytes</span>
             </div>
           </section>
 
           {/* 10. Pointer Operators */}
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">10. Pointer Operators (& and *)</h2>
-            <ul className="list-disc ml-6 text-neutral-300 space-y-2 text-sm leading-6 mb-4">
-              <li><span className="text-red-500 font-bold">&</span> → Address-of operator (gets memory address)</li>
-              <li><span className="text-red-500 font-bold">*</span> → Dereference operator (access value at an address)</li>
-            </ul>
-            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm leading-7">
-              <span className="text-red-500">int</span> a = <span className="text-blue-400">10</span>;<br/>
-              <span className="text-red-500">int</span> *ptr = &amp;a;<br/>
-              cout &lt;&lt; &amp;a &lt;&lt; endl;<br/>
-              cout &lt;&lt; *ptr &lt;&lt; endl;
+            <div className="space-y-4 mb-6">
+              <p className="text-neutral-300 text-1xl leading-6">
+                Pointers allow you to work directly with Memory Addresses. In C++, every variable is stored at a specific "spot" in your computer's RAM.
+              </p>
+              <ul className="list-disc ml-6 text-neutral-300 space-y-2 text-1xl leading-6">
+                <li><span className="text-red-500 font-bold">& (Address-of):</span> This operator "looks up" the memory address where a variable is hidden.</li>
+                <li><span className="text-red-500 font-bold">* (Dereference):</span> This operator "goes to" that address and gets the actual value stored there.</li>
+              </ul>
+            </div>
+
+            <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl leading-7 shadow-2xl overflow-x-auto">
+              <span className="text-red-500">int</span> a = <span className="text-blue-400">10</span>; <span className="text-neutral-500">// A normal variable holding the value 10</span><br/>
+              <span className="text-red-500">int</span> *ptr = &amp;a; <span className="text-neutral-500">// 'ptr' stores the ADDRESS of 'a' (e.g., 0x7ffd...)</span><br/><br/>
+
+              <span className="text-neutral-500">// 1. Printing the Address of 'a'</span><br/>
+              <span className="text-neutral-500">// This will output a weird-looking hexadecimal code like 0x61ff08.</span><br/>
+              cout &lt;&lt; &amp;a &lt;&lt; endl;<br/><br/>
+
+              <span className="text-neutral-500">// 2. Printing the Address stored in 'ptr'</span><br/>
+              <span className="text-neutral-500">// This is identical to &amp;a because 'ptr' points to 'a'.</span><br/>
+              cout &lt;&lt; ptr &lt;&lt; endl;<br/><br/>
+
+              <span className="text-neutral-500">// 3. Dereferencing (*)</span><br/>
+              <span className="text-neutral-500">// This tells C++: "Go to the address inside 'ptr' and show me what's there."</span><br/>
+              cout &lt;&lt; *ptr &lt;&lt; endl; <span className="text-neutral-600">// Output: 10</span>
             </div>
           </section>
 
@@ -310,9 +522,9 @@ export default function OperatorsLesson() {
                 "Arithmetic Expressions", "Relational Expressions", "Logical Expressions", 
                 "Bitwise Expressions", "Assignment Expressions", "Unary Expressions", 
                 "Conditional (Ternary) Expressions", "Comma Expressions"
-              ].map((exp) => (
-                <div key={exp} className="p-3 bg-neutral-900/30 border border-neutral-800 rounded text-sm text-neutral-400 font-mono">
-                  {exp}
+              ].map((type) => (
+                <div key={type} className="p-3 bg-neutral-900/50 border border-neutral-800 rounded-lg text-sm text-neutral-300 flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-red-500" /> {type}
                 </div>
               ))}
             </div>
@@ -320,107 +532,137 @@ export default function OperatorsLesson() {
 
           {/* Expression Details 1-8 */}
           <section className="space-y-12">
-            <div>
-              <h4 className="text-white font-bold mb-2">1. Arithmetic Expressions</h4>
-              <p className="text-neutral-400 text-sm mb-4 leading-6">Arithmetic expressions perform basic mathematical operations such as addition, subtraction, multiplication, and division.</p>
-              <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm mb-4 leading-7 shadow-xl">
-                <span className="text-red-500">int</span> a = <span className="text-blue-400">5</span>, b = <span className="text-blue-400">3</span>;<br/>
-                <span className="text-red-500">int</span> result = a + b * <span className="text-blue-400">2</span>;<br/>
-                cout &lt;&lt; <span className="text-orange-400">"Result: "</span> &lt;&lt; result &lt;&lt; endl;
+          {/* 1. Arithmetic Expressions */}
+            <section>
+              <h1 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">1. Arithmetic Expressions</h1>
+              <p className="text-neutral-400 text-1xl mb-4 leading-6">
+                Arithmetic expressions combine variables and constants using mathematical operators. C++ follows the BODMAS/PEMDAS rule, meaning multiplication and division happen before addition and subtraction.
+              </p>
+
+              <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl mb-4 leading-7 shadow-xl overflow-x-auto">
+                <span className="text-red-500">int</span> a = <span className="text-blue-400">5</span>, b = <span className="text-blue-400">3</span>;<br/><br/>
+                
+                <span className="text-neutral-500">// The expression is evaluated as: 5 + (3 * 2)</span><br/>
+                <span className="text-red-500">int</span> result = a + b * <span className="text-blue-400">2</span>;<br/><br/>
+                
+                cout &lt;&lt; <span className="text-orange-400">"Result: "</span> &lt;&lt; result &lt;&lt; endl;<br/>
+                <span className="text-neutral-600">// Output: Result: 11</span>
               </div>
-              <div className="p-3 bg-neutral-900 border-l-2 border-red-500 text-xs font-mono mb-2">Output: Result: 11</div>
-              <p className="text-xs text-neutral-500">Explanation: Multiplication b * 2 is done first, then the result is added to a.</p>
+
+              <div className="p-4 bg-neutral-900/50 border-l-4 border-red-500 rounded-r-lg">
+                <h5 className="text-white text-1xl font-bold uppercase tracking-wider mb-2">Step-by-Step Execution:</h5>
+                <ol className="list-decimal ml-5 text-1xl text-neutral-400 space-y-1">
+                  <li><span className="text-white font-semibold italic">Multiplication first:</span> <code className="text-blue-400">b * 2</code> (3 * 2) = <span className="text-green-500">6</span></li>
+                  <li><span className="text-white font-semibold italic">Addition second:</span> <code className="text-blue-400">a + 6</code> (5 + 6) = <span className="text-green-500">11</span></li>
+                  <li>The final value <span className="text-white font-bold">11</span> is assigned to the variable <code className="text-red-400">result</code>.</li>
+                </ol>
+              </div>
+            </section>
+
+            {/* 2. Relational Expressions */}
+            <div className="mb-12">
+              <h4 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">2. Relational Expressions</h4>
+              <p className="text-neutral-400 text-1xl mb-4">
+                Used to compare two values. The result is always a boolean (1 for true, 0 for false).
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-[15px] font-mono text-red-400 bg-neutral-900/30 p-4 rounded-lg border border-neutral-800 mb-4">
+                <span>== (Equal to)</span><span>!= (Not equal)</span><span>&gt; (Greater than)</span>
+                <span>&lt; (Less than)</span><span>&gt;= (Greater or Equal)</span><span>&lt;= (Less or Equal)</span>
+              </div>
             </div>
 
-            <div>
-              <h4 className="text-white font-bold mb-4">2. Relational Expressions</h4>
-              <p className="text-neutral-400 text-sm mb-4">Relational expressions compare two values and return true (1) or false (0).</p>
-              <div className="grid grid-cols-3 gap-2 text-xs font-mono text-red-500">
-                <span>== (equal to)</span><span>!= (not equal to)</span><span>&gt; (greater than)</span>
-                <span>&lt; (less than)</span><span>&gt;= (greater than or equal)</span><span>&lt;= (less than or equal)</span>
+            {/* 3. Logical Expressions */}
+            <div className="mb-12">
+              <h4 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">3. Logical Expressions</h4>
+              <p className="text-neutral-400 text-1xl mb-4">Combines multiple relational expressions to make complex decisions.</p>
+              <div className="grid grid-cols-3 gap-2 text-[15px] font-mono text-red-400 bg-neutral-900/30 p-4 rounded-lg border border-neutral-800">
+                <span>&& (AND)</span><span>|| (OR)</span><span>! (NOT)</span>
               </div>
             </div>
 
-            <div>
-              <h4 className="text-white font-bold mb-4">3. Logical Expressions</h4>
-              <p className="text-neutral-400 text-sm mb-4">Logical expressions perform logical operations.</p>
-              <div className="grid grid-cols-3 gap-2 text-xs font-mono text-red-500">
-                <span>&& (logical AND)</span><span>|| (logical OR)</span><span>! (logical NOT)</span>
+            {/* 4. Bitwise Expressions */}
+            <div className="mb-12">
+              <h4 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">4. Bitwise Expressions</h4>
+              <p className="text-neutral-400 text-1xl mb-4 leading-6">These expressions manipulate data at the "bit" level (0s and 1s), which is much faster for the CPU.</p>
+              <div className="grid grid-cols-3 gap-2 text-[15px] font-mono text-red-400 mb-6">
+                <span>& (AND)</span><span>| (OR)</span><span>^ (XOR)</span>
+                <span>&lt;&lt; (Left Shift)</span><span>&gt;&gt; (Right Shift)</span><span>~ (NOT)</span>
               </div>
-            </div>
-
-            <div>
-              <h4 className="text-white font-bold mb-4">4. Bitwise Expressions</h4>
-              <p className="text-neutral-400 text-sm mb-4 leading-6">Bitwise expressions perform operations on binary bits.</p>
-              <div className="grid grid-cols-3 gap-2 text-xs font-mono text-red-500 mb-6">
-                <span>& (bitwise AND)</span><span>| (bitwise OR)</span><span>^ (bitwise XOR)</span>
-                <span>&lt;&lt; (left shift)</span><span>&gt;&gt; (right shift)</span><span>~ (bitwise NOT)</span>
-              </div>
-              <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm mb-4">
-                 <span className="text-red-500">int</span> a = <span className="text-blue-400">5</span>, b = <span className="text-blue-400">3</span>;<br/>
-                 <span className="text-red-500">int</span> result = a &amp; b;<br/>
+              <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl mb-4 leading-7">
+                 <span className="text-red-500">int</span> a = <span className="text-blue-400">5</span>, b = <span className="text-blue-400">3</span>; <span className="text-neutral-500">// a=0101, b=0011</span><br/>
+                 <span className="text-neutral-500">// Bitwise AND compares each bit: Only 1 & 1 = 1</span><br/>
+                 <span className="text-red-500">int</span> result = a &amp; b; <span className="text-neutral-500">// Result: 0001 (Decimal 1)</span><br/>
                  cout &lt;&lt; <span className="text-orange-400">"Result: "</span> &lt;&lt; result &lt;&lt; endl;
               </div>
-              <div className="p-3 bg-neutral-900 border-l-2 border-red-500 text-xs font-mono mb-2">Output: Result: 1</div>
+              <div className="p-3 bg-neutral-900 border-l-2 border-red-500 text-1xl font-mono mb-2 text-neutral-300">Output: Result: 1</div>
             </div>
 
-            <div>
-              <h4 className="text-white font-bold mb-4">5. Assignment Expressions</h4>
-              <p className="text-neutral-400 text-sm mb-4">Assignment expressions assign values to variables and return the assigned value.</p>
-              <div className="flex gap-4 text-xs font-mono text-red-500 mb-6">
-                {["=", "+=", "-=", "*=", "/=", "%="].map(op => <span key={op}>{op}</span>)}
+            {/* 5. Assignment Expressions */}
+            <div className="mb-12">
+              <h4 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">5. Assignment Expressions</h4>
+              <p className="text-neutral-400 text-1xl mb-4">Assigns the value on the right to the variable on the left.</p>
+              <div className="flex flex-wrap gap-4 text-[15px] font-mono text-red-500 mb-6">
+                {["=", "+=", "-=", "*=", "/=", "%="].map(op => <span className="bg-neutral-900 px-2 py-1 rounded" key={op}>{op}</span>)}
               </div>
-              <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm mb-4">
+              <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl mb-4 leading-7">
                  <span className="text-red-500">int</span> a = <span className="text-blue-400">5</span>;<br/>
-                 <span className="text-red-500">int</span> b = (a = <span className="text-blue-400">10</span>);<br/>
-                 cout &lt;&lt; <span className="text-orange-400">"a = "</span> &lt;&lt; a &lt;&lt; <span className="text-orange-400">" b = "</span> &lt;&lt; b &lt;&lt; endl;
+                 <span className="text-neutral-500">// a stores 5.</span><br/>
               </div>
-              <div className="p-3 bg-neutral-900 border-l-2 border-red-500 text-xs font-mono mb-2">Output: a = 10 b = 10</div>
+              <div className="p-3 bg-neutral-900 border-l-2 border-red-500 text-1xl font-mono mb-2 text-neutral-300">Output: a = 5</div>
             </div>
 
-            <div>
-              <h4 className="text-white font-bold mb-4">6. Unary Expressions</h4>
-              <p className="text-neutral-400 text-sm mb-4">Unary expressions operate on a single operand.</p>
-              <div className="flex gap-4 text-xs font-mono text-red-500 mb-6">
-                {["++ (increment)", "-- (decrement)", "! (logical NOT)", "- (negation)"].map(op => <span key={op}>{op}</span>)}
-              </div>
-              <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm mb-4">
+            {/* 6. Unary Expressions */}
+            <div className="mb-12">
+              <h4 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">6. Unary Expressions</h4>
+              <p className="text-neutral-400 text-1xl mb-4">Expressions that only need one variable to work.</p>
+              <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl mb-4 leading-7">
                  <span className="text-red-500">int</span> a = <span className="text-blue-400">5</span>;<br/>
+                 <span className="text-neutral-500">// ++a increments 'a' to 6 FIRST, then assigns it to 'result'</span><br/>
                  <span className="text-red-500">int</span> result = ++a;<br/>
                  cout &lt;&lt; <span className="text-orange-400">"Result: "</span> &lt;&lt; result &lt;&lt; endl;
               </div>
-              <div className="p-3 bg-neutral-900 border-l-2 border-red-500 text-xs font-mono mb-2">Output: Result: 6</div>
+              <div className="p-3 bg-neutral-900 border-l-2 border-red-500 text-1xl font-mono mb-2 text-neutral-300">Output: Result: 6</div>
             </div>
 
-            <div>
-              <h4 className="text-white font-bold mb-2">7. Conditional (Ternary) Expression</h4>
-              <p className="text-neutral-400 text-sm mb-4 italic text-xs">A shorthand for if-else.</p>
-              <code className="block mb-4 p-2 bg-black border border-neutral-800 text-blue-400 text-xs rounded">condition ? expression1 : expression2;</code>
-              <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm mb-4 leading-7 shadow-xl">
+            {/* 7. Conditional (Ternary) Expression */}
+            <div className="mb-12">
+              <h4 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">7. Conditional (Ternary) Expression</h4>
+              <p className="text-neutral-400 text-1xl mb-4">A powerful one-line shortcut for an if-else statement.</p>
+              <code className="block mb-4 p-3 bg-neutral-900/50 border border-neutral-800 text-blue-400 text-xs rounded font-mono">
+                (condition) ? value_if_true : value_if_false;
+              </code>
+              <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl mb-4 leading-7 shadow-xl">
                  <span className="text-red-500">int</span> a = <span className="text-blue-400">5</span>, b = <span className="text-blue-400">3</span>;<br/>
+                 <span className="text-neutral-500">// If a &gt; b is true, pick 'a'. Otherwise, pick 'b'.</span><br/>
                  <span className="text-red-500">int</span> result = (a &gt; b) ? a : b;<br/>
                  cout &lt;&lt; <span className="text-orange-400">"The larger value is: "</span> &lt;&lt; result &lt;&lt; endl;
               </div>
-              <div className="p-3 bg-neutral-900 border-l-2 border-red-500 text-xs font-mono mb-2">Output: The larger value is: 5</div>
+              <div className="p-3 bg-neutral-900 border-l-2 border-red-500 text-1xl font-mono mb-2 text-neutral-300">Output: The larger value is: 5</div>
             </div>
 
-            <div>
-              <h4 className="text-white font-bold mb-2">8. Comma Expression</h4>
-              <p className="text-neutral-400 text-sm mb-4">The comma operator evaluates multiple expressions and returns the last expression value.</p>
-              <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-sm mb-4 leading-7">
+            {/* 8. Comma Expression */}
+            <div className="mb-12">
+              <h4 className="text-2xl font-bold text-white mb-4 border-l-4 border-red-600 pl-4">8. Comma Expression</h4>
+              <p className="text-neutral-400 text-1xl mb-4">Runs multiple pieces of code in one line but only "saves" the last result.</p>
+              <div className="bg-black border border-neutral-800 rounded-lg p-6 font-mono text-1xl mb-4 leading-7">
                  <span className="text-red-500">int</span> a = <span className="text-blue-400">1</span>, b = <span className="text-blue-400">2</span>, c = <span className="text-blue-400">3</span>;<br/>
-                 <span className="text-red-500">int</span> result = (a++, b++, c++);<br/>
-                 cout &lt;&lt; <span className="text-orange-400">"a = "</span> &lt;&lt; a &lt;&lt; <span className="text-orange-400">" b = "</span> &lt;&lt; b &lt;&lt; <span className="text-orange-400">" c = "</span> &lt;&lt; c &lt;&lt; endl;<br/>
+                 <span className="text-neutral-500">// 1. a becomes 2, b becomes 3, c becomes 4.</span><br/>
+                 <span className="text-neutral-500">// 2. The value of 'result' is the OLD value of c (3) because of post-increment.</span><br/>
+                 <span className="text-red-500">int</span> result = (a++, b++, c++);<br/><br/>
+                 cout &lt;&lt; <span className="text-orange-400">"a="</span> &lt;&lt; a &lt;&lt; <span className="text-orange-400">" b="</span> &lt;&lt; b &lt;&lt; <span className="text-orange-400">" c="</span> &lt;&lt; c &lt;&lt; endl;<br/>
                  cout &lt;&lt; <span className="text-orange-400">"result = "</span> &lt;&lt; result &lt;&lt; endl;
               </div>
-              <div className="p-3 bg-neutral-900 border-l-2 border-red-500 text-xs font-mono mb-2">Output: a = 2 b = 3 c = 4<br/>result = 3</div>
+              <div className="p-3 bg-neutral-900 border-l-2 border-red-500 text-1xl font-mono mb-2 text-neutral-300">
+                Output: a = 2 b = 3 c = 4<br/>
+                result = 3
+              </div>
             </div>
           </section>
         </article>
 
         {/* Navigation Footer */}
         <div className="mt-20 flex flex-col md:flex-row justify-between items-center gap-8 border-t border-neutral-800 pt-10">
-          <Link href="/langroadmap/cpp/input-output">
+          <Link href="/langroadmap/cpp/io">
             <motion.div whileHover={{ x: -5 }} whileTap={{ scale: 0.95 }} className="flex items-center gap-4 group cursor-pointer text-left">
               <div className="w-12 h-12 rounded-full border border-neutral-700 flex items-center justify-center group-hover:border-red-500 transition-colors">
                 <ChevronLeft className="w-5 h-5 text-red-500" />
